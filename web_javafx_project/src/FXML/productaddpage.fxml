@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="977.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductpageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="977.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProductaddpageController">
    <children>
       <Label layoutX="452.0" layoutY="33.0" prefHeight="41.0" prefWidth="73.0" text="제품">
          <font>
@@ -25,26 +25,26 @@
          <effect>
             <DropShadow />
          </effect></Button>
-      <Button fx:id="btnproductsum" layoutX="116.0" layoutY="569.0" mnemonicParsing="false" onAction="#productsum" prefHeight="32.0" prefWidth="765.0" style="-fx-background-color: #ffffff;" text="취소">
+      <Button fx:id="btnproductcancel" layoutX="116.0" layoutY="569.0" mnemonicParsing="false" onAction="#productcancel" prefHeight="32.0" prefWidth="765.0" style="-fx-background-color: #ffffff;" text="취소">
          <effect>
             <DropShadow />
          </effect>
       </Button>
-      <ImageView fx:id="productimg" fitHeight="360.0" fitWidth="374.0" layoutX="543.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="112.0" layoutY="132.0" prefHeight="32.0" prefWidth="355.0" />
-      <TextArea layoutX="112.0" layoutY="189.0" prefHeight="102.0" prefWidth="355.0" />
-      <TextField layoutX="112.0" layoutY="328.0" prefHeight="32.0" prefWidth="164.0" />
-      <TextField layoutX="304.0" layoutY="328.0" prefHeight="32.0" prefWidth="164.0" />
-      <RadioButton layoutX="112.0" layoutY="393.0" mnemonicParsing="false" text="상의">
+      <ImageView fx:id="uploadimg" fitHeight="360.0" fitWidth="374.0" layoutX="543.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtpname" layoutX="112.0" layoutY="132.0" prefHeight="32.0" prefWidth="355.0" />
+      <TextArea fx:id="txtpcontents" layoutX="112.0" layoutY="189.0" prefHeight="102.0" prefWidth="355.0" />
+      <TextField fx:id="txtpprice" layoutX="112.0" layoutY="328.0" prefHeight="32.0" prefWidth="164.0" />
+      <TextField fx:id="txtpstock" layoutX="304.0" layoutY="328.0" prefHeight="32.0" prefWidth="164.0" />
+      <RadioButton fx:id="opt_1" layoutX="112.0" layoutY="393.0" mnemonicParsing="false" text="상의">
          <toggleGroup>
             <ToggleGroup fx:id="category" />
          </toggleGroup></RadioButton>
-      <RadioButton layoutX="172.0" layoutY="393.0" mnemonicParsing="false" text="하의" toggleGroup="$category" />
-      <RadioButton layoutX="236.0" layoutY="393.0" mnemonicParsing="false" text="신발" toggleGroup="$category" />
-      <RadioButton layoutX="299.0" layoutY="393.0" mnemonicParsing="false" text="가방" toggleGroup="$category" />
-      <RadioButton layoutX="363.0" layoutY="393.0" mnemonicParsing="false" text="ACC" toggleGroup="$category" />
-      <Button layoutX="112.0" layoutY="437.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="사진업로드 " />
-      <Label layoutX="112.0" layoutY="470.0" prefHeight="25.0" prefWidth="384.0" text="사진 경로 : " />
+      <RadioButton fx:id="opt_2" layoutX="172.0" layoutY="393.0" mnemonicParsing="false" text="하의" toggleGroup="$category" />
+      <RadioButton fx:id="opt_3" layoutX="236.0" layoutY="393.0" mnemonicParsing="false" text="신발" toggleGroup="$category" />
+      <RadioButton fx:id="opt_4" layoutX="299.0" layoutY="393.0" mnemonicParsing="false" text="가방" toggleGroup="$category" />
+      <RadioButton fx:id="opt_5" layoutX="363.0" layoutY="393.0" mnemonicParsing="false" text="ACC" toggleGroup="$category" />
+      <Button fx:id="btnupload" layoutX="112.0" layoutY="437.0" mnemonicParsing="false" onAction="#upload" prefHeight="25.0" prefWidth="83.0" text="사진업로드 " />
+      <Label fx:id="lblpath" layoutX="112.0" layoutY="470.0" prefHeight="25.0" prefWidth="384.0" text="사진 경로 : " />
       <Label layoutX="117.0" layoutY="112.0" text="제품명" />
       <Label layoutX="117.0" layoutY="171.0" text="제품설명" />
       <Label layoutX="117.0" layoutY="306.0" text="가격" />

@@ -28,7 +28,7 @@ public class Start extends Application {
 		stage.setTitle("adidas sports"); // 스테이지 타이틀 
 		// 스테이지 아이콘 
 			// 1.이미지 불러오기 
-			Image image = new Image("file:C:/Users/nerth/git/web_0714/web_javafx_project/src/FXML/icon.jpg");
+			Image image = new Image("file:C:/Users/User/Desktop/H/web0714/javafx_project/src/FXML/icon.jpg");
 			stage.getIcons().add(image);
 		stage.show();
 		
@@ -212,9 +212,14 @@ public class Start extends Application {
 				
 
  * 
- * 
- * 
- * 
+ * 		FX:ID 
+ * 			테이블 : tableview 
+ * 			제품등록버튼 : btnproductadd	productadd
+ * 			제품통계버튼 : btnproductsum	productsum
+ * 			lblproductname		
+ * 			lblproductcontents
+ * 			lblproductactivation
+ * 			productimg
  * 
  */
 	

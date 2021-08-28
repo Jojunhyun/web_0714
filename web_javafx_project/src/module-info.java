@@ -1,4 +1,4 @@
-module web_javafx_project {
+module javafx_project {
 	requires javafx.controls;
 	requires javafx.fxml;
 	requires java.sql;
